@@ -54,6 +54,17 @@
             }) }}
           </div>
         {% endif %}
+
+        <div class="linkfield--target{{ isEmpty ? ' hidden' }}" data-test="test">
+          {{ forms.checkboxField({
+            id:       'disableNofollow',
+            name:     'disableNofollow',
+            value:    true,
+            label:    'Disable nofollow?',
+            checked:  value.disableNofollow is defined and value.disableNofollow == true ? true : null,
+            disabled: disabled,
+          }) }}
+        </div>
       </div>
 
       {% if field.hasSettings %}

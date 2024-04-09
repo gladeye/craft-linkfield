@@ -55,6 +55,10 @@ class LinkGqlType
         'name' => 'target',
         'type' => Type::string(),
       ],
+      'disableNofollow' => [
+        'name' => 'disableNofollow',
+        'type' => Type::boolean(),
+      ],
       'text' => [
         'name' => 'text',
         'type' => Type::string(),

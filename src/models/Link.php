@@ -38,6 +38,11 @@ class Link extends ForeignFieldModel
   public $target;
 
   /**
+   * @var boolean
+   */
+  public $disableNofollow;
+
+  /**
    * @var string|null
    */
   public $title;
@@ -82,6 +87,7 @@ class Link extends ForeignFieldModel
       'ariaLabel',
       'customText',
       'target',
+      'disableNofollow',
       'title',
     ];
   }
